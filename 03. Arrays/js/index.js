@@ -66,3 +66,13 @@ console.log("=========================================>");
 // for ( item in numbers){
 //     console.log(item, " ", numbers[item]);
 // }
+
+// let arr = [];
+// for(let i = 0; i< 10; i++){
+//     // arr[i] = Math.floor(Math.random() * (10 - 1 + 1)) + 1;
+//     arr.push(Math.floor(Math.random() * (10 - 1 + 1)) + 1);
+// }
+
+// for(let i = 0; i< 10; i++){
+//     console.log(arr[i]);
+// }
