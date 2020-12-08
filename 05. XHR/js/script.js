@@ -26,7 +26,14 @@ function Request(url, callback){
 }
 
 function CashCurrency(currency){
-    console.log("CashCurrency: ", currency);
+    // let root = document.getElementById("root");
+    let root = document.querySelector("#root");
+    let sp = document.createElement("span");
+    sp.innerHTML = "SPAN";
+    sp.setAttribute("class", "col");
+    // sp.setAttribute("id", "span");
+    root.appendChild(sp);
+    console.log(root);
 }
 
 function CardCurrency(currency){
@@ -34,6 +41,6 @@ function CardCurrency(currency){
 }
 
 Request(URL, CashCurrency);
-Request(URL2, CardCurrency);
+// Request(URL2, CardCurrency);
 
 
