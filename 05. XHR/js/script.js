@@ -1,4 +1,7 @@
 
+function Init(){
+    Request(URL, CashCurrency);
+}
 
 const URL = "https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5";
 const URL2 = "https://api.privatbank.ua/p24api/pubinfo?exchange&json&coursid=11";
@@ -26,6 +29,7 @@ function Request(url, callback){
 }
 
 function CashCurrency(currency){
+    console.log(currency)
     // let root = document.getElementById("root");
     let root = document.querySelector("#root");
     let sp = document.createElement("span");
@@ -40,7 +44,17 @@ function CardCurrency(currency){
     console.log("CardCurrency: ", currency);
 }
 
-Request(URL, CashCurrency);
+// Request(URL, CashCurrency);
 // Request(URL2, CardCurrency);
 
+// window.addEventListener("load", Request(URL, CashCurrency));
+// window.addEventListener("load", () => {
+//     Request(URL, CashCurrency);
+// });
+
+const btn = document.querySelector(".get_currency");
+// btn.addEventListener("click", Init);
+btn.addEventListener("click", () => {
+    Request(URL, CashCurrency);
+});
 
