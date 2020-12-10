@@ -29,6 +29,12 @@ function Request(url, callback){
 }
 
 function CashCurrency(currency){
+
+    let arr = [];
+    let usd_buy =  parseInt(currency[0].buy);
+    arr.push(usd_buy);
+    console.log("usd_buy ", usd_buy, " type ", typeof(usd_buy))
+    console.log("arr ", arr)
     console.log(currency)
     // let root = document.getElementById("root");
     let root = document.querySelector("#root");
@@ -37,7 +43,7 @@ function CashCurrency(currency){
     sp.setAttribute("class", "col");
     // sp.setAttribute("id", "span");
     root.appendChild(sp);
-    console.log(root);
+    // console.log(root);
 }
 
 function CardCurrency(currency){
