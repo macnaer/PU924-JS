@@ -1,8 +1,13 @@
 window.addEventListener("load", () => {
-    Request(`${BASE_API_URL}people/`).then(data => {
-        RenderPersons(data.results);
-    })
 
+    if (location.pathname.includes("persons.html")){
+        console.log(location.pathname);
+        Request(`${BASE_API_URL}people/`).then(data => {
+            RenderPersons(data.results);
+        })
+    }else{
+        console.log(location.pathname);
+    }
 })
 
 const BASE_API_URL = "https://swapi.dev/api/";
