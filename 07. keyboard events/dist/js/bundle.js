@@ -1,3 +1,18 @@
+
+// const URL = "https://metrix-ae70b-default-rtdb.firebaseio.com/metrix.json";
+// // fetch(URL).then(data => {
+// //     return data.json();
+// // }).then(data => {
+// //     console.log(data);
+// // })
+// // .catch(err => console.log(err));
+
+// fetch(URL, {
+//     "Content-Type": 'applocatin/json',
+//     "body": 
+// })
+
+
 let layoutOptionsCounter = 0
 let mapMouseOverCounter = 0;
 window.addEventListener("load", () => {
