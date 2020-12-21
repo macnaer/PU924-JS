@@ -56,7 +56,7 @@ div3.addEventListener(
 var input = document.querySelector(".input");
 input.addEventListener('keypress', function(){
     if (event.keyCode < 65 || event.keyCode > 90){
-        event.preventDefault();  // Відмовитись від стандартної поведінки
+        // event.preventDefault();  // Відмовитись від стандартної поведінки
     }
     console.log(event.keyCode);
 });
