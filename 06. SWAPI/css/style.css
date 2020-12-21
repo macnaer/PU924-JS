@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'DistantGalaxyRegular';
+    src: url('../fonts/sfdistantgalaxy-webfont.woff2') format('woff2'),
+         url('../fonts/sfdistantgalaxy-webfont.woff') format('woff'),
+         url('../fonts/sfdistantgalaxy-webfont.ttf') format('truetype'),
+         url('../fonts/sfdistantgalaxy-webfont.svg#sf_distant_galaxyregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    background-color: #000;
+}
+
+.header{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.pages-logo a{
+    color: #FFE300;
+    font-size: 22px;
+    font-family: DistantGalaxyRegular;
+text-align: center;
+text-decoration: none;
+}
+
+.pages-header{
+    margin-top: 10px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.header h1{
+    font-family: DistantGalaxyRegular;
+    color: #FFE300;
+    font-size: 80px;
+}
+
+.swNav ul li{
+    margin: 50px;
+    font-size: 22px;
+    
+}
+
+.swNav ul{
+    display: flex;
+    list-style: none;
+    font-family: DistantGalaxyRegular;
+
+}
+
+.swNav ul li a{
+    text-decoration: none;
+    color: white;
+    transition: all .3s;
+}
+
+.swNav ul li a:hover{
+    color: #FFE300;
+}
+
+.aiCenter{
+    display: flex;
+    justify-content: center;
+}
+
+.swNav-pages{
+    width: 100%;
+}
+
+.swNav-pages ul{
+    margin-top: 2px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-family: DistantGalaxyRegular;
+}
+
+.swUl{
+    width: 100%;
+}
+
+.swNav-pages ul li a{
+    text-decoration: none;
+    color: white;
+    transition: all .3s;
+}
+
+.swNav-pages ul li a:hover{
+    color: #FFE300;
+}
+
+
+/* TABLE */
+
+  table{
+    width:100%;
+    table-layout: fixed;
+  }
+  .tbl-header{
+    background-color: rgba(255,255,255,0.3);
+   }
+  .tbl-content{
+    overflow-x:auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255,255,255,0.3);
+  }
+  th{
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  td{
+    padding: 15px;
+    text-align: left;
+    vertical-align:middle;
+    font-weight: 300;
+    font-size: 12px;
+    color: #fff;
+    border-bottom: solid 1px rgba(255,255,255,0.1);
+  }
+  
+  
+  section{
+    margin-top: 150px;
+  }
+  
+  .pagButtons{
+      display: flex;
+      justify-content: center;
+  }
+
+  .pagButtons button{
+      background-color: transparent;
+      border: 1px solid #FFE300;
+      color: white;
+      border-radius: 5px;
+      padding: 5px 20px;
+      margin: 50px;
+  }
+
+
+/* LOADER */
+
+
+
+
+
+  .lds-hourglass {
+    /* display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px; */
+
+    display: flex;
+    justify-content: center;
+    margin-top: 400px;
+  }
+  .lds-hourglass:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 32px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-hourglass 1.2s infinite;
+  }
+  @keyframes lds-hourglass {
+    0% {
+      transform: rotate(0);
+      animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+      transform: rotate(900deg);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+      transform: rotate(1800deg);
+    }
+  }
+  
+
+  /* TEST */
+
+
+
+  
