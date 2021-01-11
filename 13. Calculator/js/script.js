@@ -1,5 +1,7 @@
 window.addEventListener("load", Init);
 
+let firtsNumber = [];
+
 function Init(){
   document.querySelector(".one").addEventListener("click", getNumber);
     document.querySelector(".two").addEventListener("click", getNumber);
@@ -12,16 +14,21 @@ function Init(){
     document.querySelector(".nine").addEventListener("click", getNumber);
     document.querySelector(".zero").addEventListener("click", getNumber);
     document.querySelector(".clear").addEventListener("click", Clear);
-
 }
 
 function Clear(){
     let screenVar = document.querySelector(".screen");
     screenVar.innerHTML = 0;
+    firtsNumber = []
 }
 
 function getNumber(){
-    console.log(this.textContent);
     let screenVar = document.querySelector(".screen");
-    screenVar.innerHTML = this.textContent
+    console.log(this.textContent);
+    firtsNumber.push(this.textContent)
+    screenVar.innerHTML = "";
+    for(let i = 0 ; i < firtsNumber.length; i++){
+        screenVar.innerHTML += firtsNumber[i];
+    }
+   
 }
