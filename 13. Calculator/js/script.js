@@ -1,8 +1,30 @@
 window.addEventListener("load", Init);
 
+const DATABASE_URL = "https://calculator-819d1-default-rtdb.firebaseio.com/calculator.json"
+
+function Request(a, sign, b){
+    let result = 0;
+    if (sign === '+'){
+        result = a + b;
+    }
+   
+    fetch(DATABASE_URL,{
+        method: 'POST', 
+        body: JSON.stringify(`${a} ${sign} ${b} = ${result}`),
+        headers: {
+        'Content-Type': 'application/json'
+        }
+
+    })
+}
+
+
 let firtsNumber = [];
 
 function Init(){
+
+   Request(4, '+', 5);
+
   document.querySelector(".one").addEventListener("click", getNumber);
     document.querySelector(".two").addEventListener("click", getNumber);
     document.querySelector(".three").addEventListener("click", getNumber);
